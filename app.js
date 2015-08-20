@@ -11,7 +11,7 @@ var artistsController = require("./controllers/artists");
 var songsController = require("./controllers/songs");
 
 app.get("/", function(req, res){
-  res.render("index", {})
+  res.render("index", {}) // render instead of json tells us that it will send HTML
 });
 
 app.use("/", artistsController);
